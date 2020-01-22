@@ -8,7 +8,7 @@ import com.purple.su.coderswag.Model.Product
  */
 object DataService {
 
-    val Categories = listOf(
+    val categories = listOf(
         Category("SHIRTS", "shirtimage"),
         Category("HOODIES", "hoodieimage"),
         Category("HATS", "hatimage"),
