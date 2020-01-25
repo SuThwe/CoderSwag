@@ -3,11 +3,8 @@ package com.purple.su.coderswag.Controller
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.purple.su.coderswag.Adapters.CategoryAdapter
 import com.purple.su.coderswag.Adapters.CategoryRecycleAdapter
-import com.purple.su.coderswag.Model.Category
 import com.purple.su.coderswag.R
 import com.purple.su.coderswag.Services.DataService
 import com.purple.su.coderswag.Utilities.EXTRA_CATEGORY_TYPE
@@ -26,10 +23,10 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(EXTRA_CATEGORY_TYPE, category.title)
             startActivity(intent)
         }
-        categoryListView.adapter = adapter
+        productListView.adapter = adapter
 
         val layoutManager = LinearLayoutManager(this)
-        categoryListView.layoutManager = layoutManager
-        categoryListView.setHasFixedSize(true)
+        productListView.layoutManager = layoutManager
+        productListView.setHasFixedSize(true)
     }
 }
